@@ -1,0 +1,87 @@
+:root {
+  --bg: #14181f;
+  --fg: #e8edf2;
+  --panel: #1e242e;
+  --border: #303a48;
+  --accent: #ffb454;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px 16px;
+}
+
+#app {
+  width: min(1020px, 100%);
+}
+
+#hud {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 8px 4px;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+}
+
+#hud-combo {
+  color: var(--accent);
+}
+
+#hud-lives {
+  color: #ff6b6b;
+  letter-spacing: 2px;
+}
+
+#hud button {
+  margin-left: auto;
+  background: var(--panel);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+#stage-wrap {
+  position: relative;
+}
+
+#stage canvas {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+#settings-panel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 250px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 13px;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.35);
+}
+
+#settings-panel label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+#settings-panel input[type='range'] {
+  width: 100%;
+}
