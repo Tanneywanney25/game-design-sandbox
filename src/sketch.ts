@@ -41,11 +41,11 @@ export function createSketch(deps: SketchDeps): (p: p5) => void {
     };
 
     p.preload = () => {
-      images.background = p.loadImage('/assets/background.png');
-      images.slicer = p.loadImage('/assets/slicer.png');
-      images.melon = p.loadImage('/assets/melon.png');
-      images.pear = p.loadImage('/assets/pear.png');
-      images.pomegranate = p.loadImage('/assets/pomegranate.png');
+      images.background = p.loadImage('assets/background.png');
+      images.slicer = p.loadImage('assets/slicer.png');
+      images.melon = p.loadImage('assets/melon.png');
+      images.pear = p.loadImage('assets/pear.png');
+      images.pomegranate = p.loadImage('assets/pomegranate.png');
     };
 
     p.setup = () => {
